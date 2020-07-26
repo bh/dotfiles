@@ -1,0 +1,40 @@
+config:
+  backup: true
+  banner: true
+  create: true
+  dotpath: dotfiles
+  keepdot: false
+  link_dotfile_default: nolink
+  link_on_import: nolink
+  longkey: false
+dotfiles:
+  f_zshrc:
+    src: zshrc
+    dst: ~/.zshrc
+    link: link
+  f_zshenv:
+    src: zshenv
+    dst: ~/.zshenv
+    link: link
+  f_gitconfig:
+    link: link
+    src: gitconfig
+    dst: ~/.gitconfig
+  f_makepkg.conf:
+    src: makepkg.conf
+    dst: ~/.makepkg.conf
+  f_wgetrc:
+    src: wgetrc
+    dst: ~/.wgetrc
+  f_xprofile:
+    src: xprofile
+    dst: ~/.xprofile
+profiles:
+  archlinux:
+    dotfiles:
+    - f_zshrc
+    - f_zshenv
+    - f_gitconfig
+    - f_makepkg.conf
+    - f_wgetrc
+    - f_xprofile
