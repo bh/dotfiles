@@ -29,6 +29,9 @@ dotfiles:
   f_xprofile:
     src: xprofile
     dst: ~/.xprofile
+  f_p10k.zsh:
+    src: p10k.zsh
+    dst: ~/.p10k.zsh
 profiles:
   archlinux:
     dotfiles:
@@ -38,3 +41,4 @@ profiles:
     - f_makepkg.conf
     - f_wgetrc
     - f_xprofile
+    - f_p10k.zsh
