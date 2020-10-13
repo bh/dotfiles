@@ -1,5 +1,6 @@
 source ~/.zinit/bin/zinit.zsh
 
+
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
@@ -45,6 +46,17 @@ zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-history-substring-search
 zinit light zdharma/fast-syntax-highlighting
 zinit light laggardkernel/zsh-thefuck
+zinit light le0me55i/zsh-extract
+zinit light joel-porquet/zsh-dircolors-solarized
+
+
+zinit light zsh-users/zsh-completions
+
+autoload compinit
+compinit
+
+
+
 
 eval "$(direnv hook zsh)"
 
