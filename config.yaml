@@ -8,10 +8,6 @@ config:
   link_on_import: nolink
   longkey: false
 dotfiles:
-  f_zshrc:
-    src: zshrc
-    dst: ~/.zshrc
-    link: link
   f_zshenv:
     src: zshenv
     dst: ~/.zshenv
@@ -20,25 +16,33 @@ dotfiles:
     link: link
     src: gitconfig
     dst: ~/.gitconfig
-  f_makepkg.conf:
-    src: makepkg.conf
-    dst: ~/.makepkg.conf
-  f_wgetrc:
-    src: wgetrc
-    dst: ~/.wgetrc
-  f_xprofile:
-    src: xprofile
-    dst: ~/.xprofile
   f_p10k.zsh:
     src: p10k.zsh
     dst: ~/.p10k.zsh
+    link: link
+  f_xprofile:
+    src: xprofile
+    dst: ~/.xprofile
+    link: link
+  f_makepkg.conf:
+    src: makepkg.conf
+    dst: ~/.makepkg.conf
+    link: link
+  f_wgetrc:
+    src: wgetrc
+    dst: ~/.wgetrc
+    link: link
+  d_zsh:
+    src: zsh
+    dst: ~/.zsh
+    link: link
 profiles:
   archlinux:
     dotfiles:
-    - f_zshrc
     - f_zshenv
     - f_gitconfig
+    - f_p10k.zsh
+    - f_xprofile
     - f_makepkg.conf
     - f_wgetrc
-    - f_xprofile
-    - f_p10k.zsh
+    - d_zsh
