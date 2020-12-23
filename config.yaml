@@ -16,10 +16,6 @@ dotfiles:
     link: link
     src: gitconfig
     dst: ~/.gitconfig
-  f_p10k.zsh:
-    src: p10k.zsh
-    dst: ~/.p10k.zsh
-    link: link
   f_xprofile:
     src: xprofile
     dst: ~/.xprofile
@@ -41,7 +37,6 @@ profiles:
     dotfiles:
     - f_zshenv
     - f_gitconfig
-    - f_p10k.zsh
     - f_xprofile
     - f_makepkg.conf
     - f_wgetrc

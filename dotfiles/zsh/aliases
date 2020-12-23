@@ -2,3 +2,8 @@ alias ll='ls -l'
 alias dotdrop='dotdrop --cfg=~/my-dotfiles/config.yaml'
 
 tmpd() { cd "$(mktemp -d -t "${1:-tmp}.XXXXXXXXXX")" }
+
+function mkcd {
+  directory="$*";
+  mkdir -p "$directory" && cd "$directory";
+}
