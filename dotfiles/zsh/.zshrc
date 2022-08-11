@@ -42,13 +42,15 @@ zinit ice depth=1;
 zinit light romkatv/powerlevel10k
 zinit light zsh-users/zsh-autosuggestions
 
-zinit snippet OMZP::django
-zinit snippet OMZP::pyenv
+#zinit snippet OMZP::django
+#zinit snippet OMZP::pyenv
 zinit snippet OMZP::archlinux
 #zinit snippet OMZP::direnv
 
 
-source /opt/asdf-vm/asdf.sh
+zinit light mattberther/zsh-pyenv
+
+#source /opt/asdf-vm/asdf.sh
 #source /etc/profile.d/fzf.zsh
 
 #zinit ice atload"zpcdreplay" atclone'./zplug.zsh'          
@@ -59,7 +61,7 @@ zinit light supercrabtree/k
 zinit light zpm-zsh/ls
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-history-substring-search
-zinit light zdharma/fast-syntax-highlighting
+zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light laggardkernel/zsh-thefuck
 zinit light le0me55i/zsh-extract
 #zinit light joel-porquet/zsh-dircolors-solarized
@@ -72,6 +74,10 @@ zinit light "pinelibg/dircolors-solarized-zsh"
 zinit light agkozak/zsh-z
 zinit light zsh-users/zsh-completions
 
+export NVM_COMPLETION=true
+export NVM_SYMLINK_CURRENT="true"
+export NVM_AUTO_USE=true
+zinit wait lucid light-mode for lukechilds/zsh-nvm
 
 
 autoload compinit
