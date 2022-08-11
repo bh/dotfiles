@@ -7,31 +7,32 @@ config:
   link_dotfile_default: nolink
   link_on_import: nolink
   longkey: false
+  minversion: 1.10.3
 dotfiles:
   f_zshenv:
     src: zshenv
     dst: ~/.zshenv
-    link: link
+    link: absolute
   f_gitconfig:
-    link: link
+    link: absolute
     src: gitconfig
     dst: ~/.gitconfig
   f_xprofile:
     src: xprofile
     dst: ~/.xprofile
-    link: link
+    link: absolute
   f_makepkg.conf:
     src: makepkg.conf
     dst: ~/.makepkg.conf
-    link: link
+    link: absolute
   f_wgetrc:
     src: wgetrc
     dst: ~/.wgetrc
-    link: link
+    link: absolute
   d_zsh:
     src: zsh
     dst: ~/.zsh
-    link: link
+    link: absolute
 profiles:
   archlinux:
     dotfiles:
